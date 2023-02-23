@@ -2,6 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
 import raw from 'raw.macro';
+import { useTranslation } from 'react-i18next';
+import { useSelector } from 'react-redux';
+import i18n from '../i18n';
 
 import Main from '../layouts/Main';
 
@@ -15,27 +18,33 @@ const count = markdown.split(/\s+/)
 // Make all hrefs react router links
 const LinkRenderer = ({ ...children }) => <Link {...children} />;
 
-const About = () => (
-  <Main
-    title="About"
-    description="Learn about Lucas Nogueira"
-  >
-    <article className="post markdown" id="about">
-      <header>
-        <div className="title">
-          <h2 data-testid="heading"><Link to="/about">About Me</Link></h2>
-          <p>(in about {count} words)</p>
-        </div>
-      </header>
-      <ReactMarkdown
-        source={markdown}
-        renderers={{
-          Link: LinkRenderer,
-        }}
-        escapeHtml={false}
-      />
-    </article>
-  </Main>
-);
+const About = () => {
+  const language = useSelector((state) => state.language.value);
+  i18n.changeLanguage(language);
+  const { t } = useTranslation();
+
+  return (
+    <Main
+      title={t('about.title')}
+      description={t('about.description')}
+    >
+      <article className="post markdown" id="about">
+        <header>
+          <div className="title">
+            <h2 data-testid="heading"><Link to="/about">{t('about.aboutMe')}</Link></h2>
+            <p>({t('about.countWords', { count })})</p>
+          </div>
+        </header>
+        <ReactMarkdown
+          source={markdown}
+          renderers={{
+            Link: LinkRenderer,
+          }}
+          escapeHtml={false}
+        />
+      </article>
+    </Main>
+  );
+};
 
 export default About;

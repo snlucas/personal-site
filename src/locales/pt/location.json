@@ -1,0 +1,46 @@
+{
+  "main": {
+    "title": "Lucas Nogueira",
+    "content": "{{desc}} Lucas Nogueira's personal website."
+  },
+  "about": {
+    "title": "About",
+    "description": "Learn about Lucas Nogueira",
+    "aboutMe": "About Me",
+    "countWords": "in about {{count}} words"
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Contact Lucas Nogueira via email @ lucas.sn@protonmail.com",
+    "contact": "Contact",
+    "getInTouch": "Feel free to get in touch. You can email me at: "
+  },
+  "index": {
+    "description": "Site pessoal de Lucas Nogueira. Desenvolvedor web e de automações graduando em Bacharelado em Sistemas de Informação.",
+    "aboutMe": "Desenvolvedor Web e de Automações.",
+    "presentation": "Seja bem-vindo a meu site. Fique a vontade para ler mais <1>sobre mim</1>. Ou se quiser, você pode ver meu <4>curriculum</4>, <7>projetos</7>, <11>estatísticas</11>, ou <15>me chamar para conversar</15>."
+  },
+  "notFound": {
+    "description": "O conteúdo que você está buscando não foi encontrado.",
+    "page": "Página não encontrada",
+    "return": "Retorne",
+    "home": "início"
+  },
+  "projects": {
+    "title": "Projetos",
+    "description": "Saiba mais sobre meus projetos.",
+    "projects": "Projetos",
+    "aboutPage": "Alguns de meus projetos"
+  },
+  "stats": {
+    "title": "Estatísticas",
+    "description": "Algumas estatísticas sobre mim",
+    "linkToStats": "Estatísticas"
+  },
+  "sideBar": {
+    "about": "Sobre",
+    "presentation": "Olá! Me chamo Lucas e sou desenvolvedor web e de automações. Atualmente sou bacharelando em Sistemas de Informação na <1>Unisinos</1> e trabalho como Engenheiro de Software <5>Salesforce</5> na empresa <3>SR Consulting</3>.",
+    "learnMore": "Saiba mais",
+    "aboutMe": "Sobre mim"
+  }
+}
