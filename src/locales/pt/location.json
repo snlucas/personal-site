@@ -21,10 +21,8 @@
     "presentation": "Seja bem-vindo a meu site. Fique a vontade para ler mais <1>sobre mim</1>. Ou se quiser, você pode ver meu <4>curriculum</4>, <7>projetos</7>, <11>estatísticas</11>, ou <15>me chamar para conversar</15>."
   },
   "notFound": {
-    "description": "O conteúdo que você está buscando não foi encontrado.",
-    "page": "Página não encontrada",
-    "return": "Retorne",
-    "home": "início"
+    "head": "Página não encontrada",
+    "return": "Retorne para o <1>início</1>."
   },
   "projects": {
     "title": "Projetos",

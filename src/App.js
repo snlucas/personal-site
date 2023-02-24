@@ -8,12 +8,12 @@ const { PUBLIC_URL } = process.env;
 // Every route - we lazy load so that each page can be chunked
 // NOTE that some of these chunks are very small. We should optimize
 // which pages are lazy loaded in the future.
-const About = lazy(() => import('./pages/NotFoun'));
-const Contact = lazy(() => import('./pages/NotFoun'));
-const Index = lazy(() => import('./pages/NotFoun'));
+const About = lazy(() => import('./pages/NotFound'));
+const Contact = lazy(() => import('./pages/NotFound'));
+const Index = lazy(() => import('./pages/Index'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 const Projects = lazy(() => import('./pages/NotFound'));
-const Resume = lazy(() => import('./pages/BotFound'));
+const Resume = lazy(() => import('./pages/NotFound'));
 const Stats = lazy(() => import('./pages/NotFound'));
 
 const App = () => (
