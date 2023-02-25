@@ -1,7 +1,9 @@
-const routes = [
+const HOME = 'Home';
+
+export const routes = [
   {
     index: true,
-    label: 'Lucas S. Nogueira',
+    label: HOME,
     path: '/',
   },
   {
@@ -26,4 +28,32 @@ const routes = [
   },
 ];
 
-export default routes;
+export const routesBr = [
+  {
+    index: true,
+    label: 'Início',
+    path: '/',
+  },
+  {
+    label: 'Sobre',
+    path: '/about',
+  },
+  {
+    label: 'Curriculum',
+    path: '/resume',
+  },
+  {
+    label: 'Projetos',
+    path: '/projects',
+  },
+  {
+    label: 'Estatísticas',
+    path: '/stats',
+  },
+  {
+    label: 'Contato',
+    path: '/contact',
+  },
+];
+
+export default { routes, routesBr };

@@ -1,12 +1,19 @@
 import React, { Suspense, lazy, useState } from 'react';
 
+import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import routes from '../../data/routes';
+import i18n from '../../i18n';
+
+import { routes, routesBr } from '../../data/routes';
 
 const Menu = lazy(() => import('react-burger-menu/lib/menus/slide'));
 
 const Hamburger = () => {
   const [open, setOpen] = useState(false);
+
+  const language = useSelector((state) => state.language.value);
+  i18n.changeLanguage(language);
+  const r = language === 'pt' ? routesBr : routes;
 
   return (
     <div className="hamburger-container">
@@ -26,7 +33,7 @@ const Hamburger = () => {
       <Suspense fallback={<></>}>
         <Menu right isOpen={open}>
           <ul className="hamburger-ul">
-            {routes.map((l) => (
+            {r.map((l) => (
               <li key={l.label}>
                 <Link to={l.path} onClick={() => setOpen(!open)}>
                   <h3 className={l.index && 'index-li'}>{l.label}</h3>
