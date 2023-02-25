@@ -11,7 +11,7 @@ const LanguageSelector = () => {
 
   return (
     <div>
-      <button type="button" onClick={() => handleChangeLanguage('en')}>English</button>
+      <button type="button" onClick={() => handleChangeLanguage('en')}>English</button>{' '}
       <button type="button" onClick={() => handleChangeLanguage('pt')}>Português</button>
     </div>
   );
