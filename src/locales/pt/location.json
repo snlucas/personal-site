@@ -4,10 +4,8 @@
     "content": "{{desc}} Lucas Nogueira's personal website."
   },
   "about": {
-    "title": "About",
-    "description": "Learn about Lucas Nogueira",
-    "aboutMe": "About Me",
-    "countWords": "in about {{count}} words"
+    "aboutMe": "Sobre mim",
+    "countWords": "(Em {{count}} palavras)"
   },
   "contact": {
     "title": "Contact",
