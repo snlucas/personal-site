@@ -10,6 +10,7 @@ export const routes = [
     label: 'About',
     path: '/about',
   },
+  /*
   {
     label: 'Resume',
     path: '/resume',
@@ -22,6 +23,7 @@ export const routes = [
     label: 'Stats',
     path: '/stats',
   },
+  */
   {
     label: 'Contact',
     path: '/contact',
@@ -38,6 +40,7 @@ export const routesBr = [
     label: 'Sobre',
     path: '/about',
   },
+  /*
   {
     label: 'Curriculum',
     path: '/resume',
@@ -50,6 +53,7 @@ export const routesBr = [
     label: 'Estatísticas',
     path: '/stats',
   },
+  */
   {
     label: 'Contato',
     path: '/contact',
