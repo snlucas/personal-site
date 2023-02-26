@@ -23,10 +23,8 @@
     "return": "Retorne para o <1>início</1>."
   },
   "projects": {
-    "title": "Projetos",
-    "description": "Saiba mais sobre meus projetos.",
     "projects": "Projetos",
-    "aboutPage": "Alguns de meus projetos"
+    "desc": "Uma seleção com alguns de meus projetos."
   },
   "stats": {
     "title": "Estatísticas",

@@ -1,6 +1,6 @@
 import React from 'react';
+import { Trans } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
 
 import { useSelector } from 'react-redux';
 import i18n from '../i18n';
@@ -12,18 +12,17 @@ import data from '../data/projects';
 const Projects = () => {
   const language = useSelector((state) => state.language.value);
   i18n.changeLanguage(language);
-  const { t } = useTranslation();
 
   return (
     <Main
-      title={t('projects;title')}
-      description={t('projects.description')}
+      title="Projects"
+      description="Learn about Lucas's projects."
     >
       <article className="post" id="projects">
         <header>
           <div className="title">
-            <h2 data-testid="heading"><Link to="/projects">{t('projects.projects')}</Link></h2>
-            <p>{t('projects.aboutPage')}</p>
+            <h2 data-testid="heading"><Link to="/projects"><Trans i18nKey="projects.projects">Projects</Trans></Link></h2>
+            <p><Trans i18nKey="projects.desc">A selection of some of mine projects.</Trans></p>
           </div>
         </header>
         {data.map((project) => (

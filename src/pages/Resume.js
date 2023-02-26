@@ -22,6 +22,14 @@ const sections = [
   'References',
 ];
 
+const sectionsBr = [
+  'Escolaridade',
+  'Experiência',
+  'Habilidades',
+  'Cursos',
+  'Referências',
+];
+
 const Resume = () => (
   <Main
     title="Resume"

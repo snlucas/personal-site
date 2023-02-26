@@ -52,10 +52,10 @@
 
 		.links {
 			@include vendor('flex', '1');
-			border-left: solid 1px _palette(border);
+			border-left: solid 5px _palette(border);
 			height: inherit;
 			line-height: inherit;
-			margin-left: 1.5em;
+			//margin-left: 1.5em;
 			overflow: hidden;
 			padding-left: 1.5em;
 
@@ -196,6 +196,8 @@
 
 	#header .index-link {
 		z-index: 3;
+		background-color: #EF3340;
+		padding-right: 1.5em;
 	}
 
 	#header .main .menu {
