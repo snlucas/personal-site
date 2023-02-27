@@ -20,7 +20,7 @@ const SideBar = () => {
         </Link>
         <header>
           <h2>Lucas S. Nogueira</h2>
-          <p><a href="lucas.sn@protonmail.com">lucas.sn@protonmail.com</a></p>
+          <p><a href="mailto:lucas.sn@protonmail.com">lucas.sn@protonmail.com</a></p>
         </header>
         <LanguageSelector />
       </section>
