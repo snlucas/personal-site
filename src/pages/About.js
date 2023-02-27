@@ -32,7 +32,7 @@ const About = () => {
         <header>
           <div className="title">
             <h2 data-testid="heading"><Link to="/about"><Trans i18nKey="about.aboutMe">About Me</Trans></Link></h2>
-            <p><Trans i18nKey="about.countWords" count={count}>(in about {{count}} words)</Trans></p>
+            <p><Trans i18nKey="about.countWords" count={count}>(in about {{ count }} words)</Trans></p>
           </div>
         </header>
         <ReactMarkdown
