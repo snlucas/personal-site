@@ -8,10 +8,8 @@
     "countWords": "(Em {{count}} palavras)"
   },
   "contact": {
-    "title": "Contact",
-    "description": "Contact Lucas Nogueira via email @ lucas.sn@protonmail.com",
-    "contact": "Contact",
-    "getInTouch": "Feel free to get in touch. You can email me at: "
+    "contact": "Contato",
+    "getInTouch": "Fique a vontade para entrar em contato por email: "
   },
   "index": {
     "description": "Site pessoal de Lucas Nogueira. Desenvolvedor web e de automações graduando em Bacharelado em Sistemas de Informação.",

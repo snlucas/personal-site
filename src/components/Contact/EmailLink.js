@@ -1,51 +1,74 @@
 import React, { useState, useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 
-// Validates the first half of an email address.
-const validateText = (text) => {
-  // NOTE: Passes RFC 5322 but not tested on google's standard.
-  // eslint-disable-next-line no-useless-escape
-  const re = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))$/;
-  return re.test(text) || text.length === 0;
-};
-
-const messages = [
-  'hi',
-  'hello',
-  'hola',
-  'you-can-email-me-at-literally-anything! Really',
-  'well, not anything. But most things',
-  'like-this',
-  'or-this',
-  'but not this :(  ',
-  'you.can.also.email.me.with.specific.topics.like',
-  'just-saying-hi',
-  'please-work-for-us',
-  'help',
-  'admin',
-  'or-I-really-like-your-website',
-  'thanks',
-];
-
-const useInterval = (callback, delay) => {
-  const savedCallback = useRef();
-
-  useEffect(() => {
-    savedCallback.current = callback;
-  }, [callback]);
-
-  useEffect(() => {
-    if (delay) {
-      const id = setInterval(() => {
-        savedCallback.current();
-      }, delay);
-      return () => clearInterval(id);
-    }
-    return () => {}; // pass linter
-  }, [delay]);
-};
+import { useSelector } from 'react-redux';
+import i18n from '../../i18n';
 
 const EmailLink = ({ loopMessage }) => {
+  const language = useSelector((state) => state.language.value);
+  i18n.changeLanguage(language);
+
+  // Validates the first half of an email address.
+  const validateText = (text) => {
+    // NOTE: Passes RFC 5322 but not tested on google's standard.
+    // eslint-disable-next-line no-useless-escape
+    const re = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))$/;
+    return re.test(text) || text.length === 0;
+  };
+
+  const messages = language === 'pt'
+    ? [
+      'oi',
+      'olá',
+      'e_aí?',
+      'você-pode-me-mandar-um-email-sobre-qualquer-coisa!_Sério',
+      'na_verdade_não_qualquer_coisa._Mas_quase_tudo',
+      'como_isso_🚢',
+      'ou_isso_🛸',
+      'mas_não_isso_😞',
+      'você.também.pode.me.enviar.um.email.sobre.alguma.coisa.específica.como',
+      'só-passando-por-aqui_👽',
+      'vem-trabalhar-aqui-por-favorsinho_💰',
+      'curti_👍',
+      '🌟🌟🌟🌟🌟',
+      'obrigado',
+    ]
+    : [
+      'hi',
+      'hello',
+      'hola',
+      'you-can-email-me-at-literally-anything._Really',
+      'well_not_anything._But_most_things',
+      'like-this_🚢',
+      'or-this_🛸',
+      'but_not_this_😞',
+      'you.can.also.email.me.with.specific.topics.like',
+      'just-saying-hi_👽',
+      'please-work-for-us_💰',
+      'help',
+      'admin',
+      'or-I-really-like-your-website',
+      'thanks',
+    ];
+
+  const useInterval = (callback, delay) => {
+    const savedCallback = useRef();
+
+    useEffect(() => {
+      savedCallback.current = callback;
+    }, [callback]);
+
+    useEffect(() => {
+      if (delay) {
+        const id = setInterval(() => {
+          savedCallback.current();
+        }, delay);
+        return () => clearInterval(id);
+      }
+      return () => { }; // pass linter
+    }, [delay]);
+  };
+
   const hold = 50; // ticks to wait after message is complete before rendering next message
   const delay = 50; // tick length in mS
 
@@ -82,9 +105,10 @@ const EmailLink = ({ loopMessage }) => {
       onMouseEnter={() => setIsActive(false)}
       onMouseLeave={() => (idx < messages.length) && setIsActive(true)}
     >
-      <a href={validateText(message) ? `mailto:${message}@protonmail.com` : ''}>
+      {/* <a href={validateText(message) ? `mailto:${message}@protonmail.com` : ''}> */}
+      <a href="mailto:lucas.sn@protonmail.com">
         <span>{message}</span>
-        <span>@mldangelo.com</span>
+        <span>@snlucas.com</span>
       </a>
     </div>
   );
