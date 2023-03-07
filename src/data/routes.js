@@ -39,7 +39,7 @@ export const routesBr = [
     path: '/about',
   },
   {
-    label: 'Curriculum',
+    label: 'Experiência',
     path: '/resume',
   },
   {
