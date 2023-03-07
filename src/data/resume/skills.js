@@ -1,6 +1,3 @@
-// TODO: Add Athletic Skills, Office Skills,
-// Data Engineering, Data Science, ML Engineering, ... ?
-
 const skills = [
   {
     title: 'Javascript',
@@ -30,17 +27,17 @@ const skills = [
   {
     title: 'Bash',
     competency: 4,
-    category: ['Tools', 'Languages'],
+    category: ['Tools', 'Languages', 'DevOps'],
   },
   {
     title: 'Amazon Web Services',
     competency: 2,
-    category: ['Web Development', 'Tools'],
+    category: ['Web Development', 'Tools', 'DevOps'],
   },
   {
     title: 'Heroku',
     competency: 2,
-    category: ['Web Development', 'Tools'],
+    category: ['Web Development', 'Tools', 'DevOps'],
   },
   {
     title: 'SQLite3/SQL',
@@ -50,17 +47,17 @@ const skills = [
   {
     title: 'Selenium',
     competency: 2,
-    category: ['Tools'],
+    category: ['Tools', 'Automation', 'Python'],
   },
   {
     title: 'Git',
     competency: 3,
-    category: ['Tools'],
+    category: ['Tools', 'DevOps'],
   },
   {
     title: 'Docker',
     competency: 3,
-    category: ['Tools', 'Data Engineering'],
+    category: ['Tools', 'DevOps'],
   },
   {
     title: 'HTML + CSS',
@@ -71,6 +68,11 @@ const skills = [
     title: 'Python',
     competency: 5,
     category: ['Languages', 'Python'],
+  },
+  {
+    title: 'Beautiful Soup',
+    competency: 4,
+    category: ['Tools', 'Python', 'Automation'],
   },
 ].map((skill) => ({ ...skill, category: skill.category.sort() }));
 

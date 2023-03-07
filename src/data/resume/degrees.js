@@ -6,7 +6,7 @@ const degrees = [
     year: 2023,
   },
   {
-    school: 'Health Sciences Federal University of Porto Alegre (not completed)',
+    school: 'Health Sciences Federal University of Porto Alegre (Aborted)',
     degree: 'B.Sc. Biomedical Informatics',
     link: 'https://www.ufcspa.edu.br/',
     year: 2017,
