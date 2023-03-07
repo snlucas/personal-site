@@ -25,9 +25,10 @@
     "description": "Uma seleção de projetos."
   },
   "stats": {
-    "title": "Estatísticas",
-    "description": "Algumas estatísticas sobre mim",
-    "linkToStats": "Estatísticas"
+    "stats": "Estatísticas"
+  },
+  "personal": {
+    "statsAbout": "Algumas estatísticas sobre mim"
   },
   "sideBar": {
     "about": "Sobre",
