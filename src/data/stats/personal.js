@@ -33,6 +33,11 @@ export const data = [
   // },
   {
     key: 'localidade',
+    label: 'Current country',
+    value: 'Brazil',
+  },
+  {
+    key: 'localidade',
     label: 'Current city',
     value: 'São Leopoldo, RS',
   },
@@ -51,6 +56,11 @@ export const dataBr = [
   //   link:
   //     'https://www.google.com/maps/d/embed?mid=1iBBTscqateQ93pWFVfHCUZXoDu8&z=2',
   // },
+  {
+    key: 'localidade',
+    label: 'País atual',
+    value: 'Brasil',
+  },
   {
     key: 'localidade',
     label: 'Cidade atual',
