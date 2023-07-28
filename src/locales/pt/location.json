@@ -9,7 +9,8 @@
   },
   "contact": {
     "contact": "Contato",
-    "getInTouch": "Fique a vontade para entrar em contato por email: "
+    "getInTouch": "Fique a vontade para entrar em contato por email: ",
+    "linkBelow": "Ou clique no link abaixo."
   },
   "index": {
     "description": "Site pessoal de Lucas Nogueira. Desenvolvedor web e de automações graduando em Bacharelado em Sistemas de Informação.",

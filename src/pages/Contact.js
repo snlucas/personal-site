@@ -25,6 +25,9 @@ const Contact = () => {
         </header>
         <div className="email-at">
           <p><Trans i18nKey="contact.getInTouch">Feel free to get in touch. You can email me at: </Trans></p>
+          lucas.sn@protonmail.com
+          lucas.lambda.101@gmail.com
+          <p><Trans i18nKey="contact.linkBelow">Or just click in the link below.</Trans></p>
           <EmailLink />
         </div>
         <ContactIcons />
