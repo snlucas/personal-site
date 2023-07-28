@@ -15,11 +15,8 @@ const SideBar = () => {
   return (
     <section id="sidebar">
       <section id="intro">
-        <Link to="/" className="logo">
-          <img src={`${PUBLIC_URL}/images/me.jpg`} alt="Profile" />
-        </Link>
         <header>
-          <h2>Lucas S. Nogueira</h2>
+          <h2><Link to="/" className="logo">Lucas S. Nogueira</Link></h2>
           <p><a href="mailto:lucas.sn@protonmail.com">lucas.sn@protonmail.com</a></p>
         </header>
         <LanguageSelector />
