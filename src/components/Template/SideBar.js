@@ -7,8 +7,6 @@ import i18n from '../../i18n';
 import ContactIcons from '../Contact/ContactIcons';
 import LanguageSelector from '../LanguageSelector';
 
-const { PUBLIC_URL } = process.env; // set automatically from package.json:homepage
-
 const SideBar = () => {
   const language = useSelector((state) => state.language.value);
   i18n.changeLanguage(language);
