@@ -28,9 +28,10 @@ const SideBar = () => {
         </h2>
         <p>
           <Trans i18nKey="sideBar.presentation">
-            Hi, I&apos;m Lucas. Automation and web developer.
-            Actually I am a <a href="https://www.unisinos.br/">Unisinos</a> B.Sc. in Information Systems student, and
-            work at <a href="https://srconsulting.io/">SR Consulting</a> a <a href="https://www.salesforce.com/">Salesforce</a> consulting company.
+            Hi, I&apos;m Lucas. Full Stack and Salesforce Developer.
+            Currently I work as a Salesforce Software Engineer at 
+            <a href="https://srconsulting.io/">SR Consulting</a>, a 
+            <a href="https://www.salesforce.com/">Salesforce</a> consulting company.
           </Trans>
         </p>
         <ul className="actions">
