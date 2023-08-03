@@ -1,8 +1,14 @@
 
 # Início
 
-Sou um programador web. Gosto de desenvolver sites simples e features para grandes empresas usando Javascript e automações usando Python. Tenho experiência com algumas linguagens de programação (C, Java, Javascript, Python, Dart, PHP e Simtalk) e gosto de aprender e criar novos projetos.
+Sou um programador Full Stack e Salesforce e gosto de desenvolver projetos com boa qualidade e que tenham um grande e positivo impacto.
+
+Entre 2019-2020 tive a oportunidade de lidar com projetos de simulação de plantas de fábricas para a pré-venda de robôs utilizando o software Siemens Plant Simulation.
+
+Anteriormente a isso, tive a oportunidade de lidar com suporte técnico de hardware.
+
+Gosto muito de projetos Open Source e de aprender novas tecnologias de desenvolvimento de software.
 
 # Atualmente
 
-Atualmente estou cursando bacharelado em Sistemas de Informação e trabalhando na SR Consulting (uma empresa de consultoria Salesforce).
+Atualmente estou atuando como Engenheiro de Software em uma empresa de consultoria. Meu foco está em sempre melhorar a experiência de usuários usando o CRM Salesforce.
