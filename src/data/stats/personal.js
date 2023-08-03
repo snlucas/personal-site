@@ -24,13 +24,6 @@ export const data = [
     label: 'Current age',
     value: <Age />,
   },
-  // {
-  //   key: 'países',
-  //   label: 'países visitados',
-  //   value: 53,
-  //   link:
-  //     'https://www.google.com/maps/d/embed?mid=1iBBTscqateQ93pWFVfHCUZXoDu8&z=2',
-  // },
   {
     key: 'localidade',
     label: 'Current country',
@@ -49,13 +42,6 @@ export const dataBr = [
     label: 'Idade atual',
     value: <Age />,
   },
-  // {
-  //   key: 'países',
-  //   label: 'países visitados',
-  //   value: 53,
-  //   link:
-  //     'https://www.google.com/maps/d/embed?mid=1iBBTscqateQ93pWFVfHCUZXoDu8&z=2',
-  // },
   {
     key: 'localidade',
     label: 'País atual',
