@@ -1,6 +1,7 @@
 import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
 // import { faFacebookF } from '@fortawesome/free-brands-svg-icons/faFacebookF';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons/faInstagram';
+import { faSalesforce } from '@fortawesome/free-brands-svg-icons/faSalesforce';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons/faLinkedinIn';
 // import { faAngellist } from '@fortawesome/free-brands-svg-icons/faAngellist';
 // import { faTwitter } from '@fortawesome/free-brands-svg-icons/faTwitter';
@@ -14,35 +15,16 @@ const data = [
     label: 'Github',
     icon: faGithub,
   },
-  /*
   {
-    link: 'https://www.facebook.com/rorschach.lucas',
-    label: 'Facebook',
-    icon: faFacebookF,
-  },
-  */
-  {
-    link: 'https://www.instagram.com/snlucas.dude/',
-    label: 'Instagram',
-    icon: faInstagram,
+    link: 'https://www.salesforce.com/trailblazer/snlucas',
+    label: 'Salesforce',
+    icon: faSalesforce,
   },
   {
     link: 'https://www.linkedin.com/in/sn-lucas/',
     label: 'LinkedIn',
     icon: faLinkedinIn,
   },
-  /*
-  {
-    link: '#',
-    label: 'Angel List',
-    icon: faAngellist,
-  },
-  {
-    link: 'https://twitter.com/synclucas',
-    label: 'Twitter',
-    icon: faTwitter,
-  },
-  */
   {
     link: 'mailto:lucas.sn@protonmail.com',
     label: 'Email',
