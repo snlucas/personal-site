@@ -28,10 +28,7 @@ const SideBar = () => {
         </h2>
         <p>
           <Trans i18nKey="sideBar.presentation">
-            Hi, I&apos;m Lucas. Full Stack and Salesforce Developer.
-            Currently I work as a Salesforce Software Engineer at 
-            <a href="https://srconsulting.io/">SR Consulting</a>, a 
-            <a href="https://www.salesforce.com/">Salesforce</a> consulting company.
+            Hi, I&apos;m Lucas. Full Stack and Salesforce Developer. Currently I work as a Salesforce Software Engineer at <a href="https://srconsulting.io/">SR Consulting</a>, a <a href="https://www.salesforce.com/">Salesforce</a> consulting company.
           </Trans>
         </p>
         <ul className="actions">
