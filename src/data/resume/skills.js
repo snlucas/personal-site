@@ -5,22 +5,17 @@ const skills = [
     category: ['Web Development', 'Languages', 'Javascript'],
   },
   {
-    title: 'Node.JS',
+    title: 'Salesforce Aura',
     competency: 3,
     category: ['Web Development', 'Javascript'],
   },
   {
-    title: 'Aura',
+    title: 'Salesforce LWC',
     competency: 3,
     category: ['Web Development', 'Javascript'],
   },
   {
-    title: 'LWC',
-    competency: 2,
-    category: ['Web Development', 'Javascript'],
-  },
-  {
-    title: 'Apex',
+    title: 'Salesforce Apex',
     competency: 2,
     category: ['Languages'],
   },
@@ -41,7 +36,7 @@ const skills = [
   },
   {
     title: 'SQLite3/SQL',
-    competency: 4,
+    competency: 3,
     category: ['Web Development', 'Databases', 'Languages'],
   },
   {
@@ -66,13 +61,8 @@ const skills = [
   },
   {
     title: 'Python',
-    competency: 5,
+    competency: 3,
     category: ['Languages', 'Python'],
-  },
-  {
-    title: 'Beautiful Soup',
-    competency: 4,
-    category: ['Tools', 'Python', 'Automation'],
   },
 ].map((skill) => ({ ...skill, category: skill.category.sort() }));
 
